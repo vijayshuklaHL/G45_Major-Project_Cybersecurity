@@ -1,32 +1,29 @@
 # G45_Major-Project_Cybersecurity
-**#Cyber Security Reconnaissance and Vulnerability Assessment**
 
+## Cyber Security Reconnaissance and Vulnerability Assessment
 
-The given code is designed to create a graphical user interface (GUI) for a security assessment tool called "ReconVuln Software." 
-It utilizes the tkinter library to develop the GUI and incorporates different functionalities to conduct security assessments and vulnerability analysis.
+The provided code creates a Graphical User Interface (GUI) for a security assessment tool named "ReconVuln Software." This tool leverages the tkinter library to build the GUI and integrates functionalities for conducting security assessments and vulnerability analysis.
 
-To begin, the code imports essential modules from the tkinter library and other dependencies like requests, Wappalyzer, and webbrowser. 
-It also defines a list of options for the search functionality.
+### Code Structure Overview:
 
-The core functionality of the code is implemented within the `SecurityAssessmentGUI` class, which represents the GUI window. 
-This class contains methods for creating tabs, input fields, buttons, and executing security assessments.
+- Essential modules are imported from the tkinter library and other dependencies (e.g., requests, Wappalyzer, and webbrowser).
+- A list of options for the search functionality is defined.
+- The core functionality is encapsulated in the `SecurityAssessmentGUI` class, representing the GUI window.
 
-The `create_recon_tab` method generates a tab dedicated to reconnaissance tasks. 
-It encompasses sections for performing IP lookup, website analysis using Wappalyzer, and utilizing the Google Dork search engine. 
-The method sets up the required GUI elements and associates them with corresponding functions for executing the desired tasks.
+### Reconnaissance Tab:
 
-The `update_input_fields` method is responsible for dynamically updating the input fields based on the selected search option. 
-It shows or hides the input fields based on the option chosen by the user.
+The `create_recon_tab` method generates a dedicated tab for reconnaissance tasks, including sections for IP lookup, website analysis with Wappalyzer, and utilizing the Google Dork search engine. GUI elements are set up and linked to corresponding functions for task execution.
 
-The `perform_ip_lookup`, `analyze_website`, `analyze_with_categories`, and `analyze_with_versions_and_categories` methods execute specific security assessments. 
-These methods employ external libraries and APIs to retrieve and analyze information related to IP addresses and websites.
+The `update_input_fields` method dynamically updates input fields based on the selected search option, showing or hiding fields accordingly.
 
-The `search_google_dorks` method conducts a Google Dork search based on the selected search option and query. 
-It constructs the appropriate search query and opens the search results in a new browser tab.
+Specific security assessments are conducted by methods such as `perform_ip_lookup`, `analyze_website`, `analyze_with_categories`, and `analyze_with_versions_and_categories`. External libraries and APIs are employed for retrieving and analyzing information related to IP addresses and websites.
 
-The `create_vulnerability_tab` method generates a tab dedicated to vulnerability assessment. 
-It includes sections for assessing network security, system security, and data security. 
-Radio buttons are provided for each assessment item, allowing the user to select the appropriate option.
+The `search_google_dorks` method performs a Google Dork search based on user-selected options and query, constructing the appropriate search query and opening results in a new browser tab.
 
-Overall, the code offers a user-friendly interface for conducting security assessments and vulnerability analysis. 
-It incorporates various tools and techniques to provide an efficient and comprehensive assessment of security aspects.
+### Vulnerability Assessment Tab:
+
+The `create_vulnerability_tab` method generates a tab for vulnerability assessment, with sections for network security, system security, and data security. Radio buttons are provided for each assessment item, enabling user selection.
+
+### Summary:
+
+In summary, this code provides a user-friendly interface for conducting security assessments and vulnerability analysis. It incorporates diverse tools and techniques to offer an efficient and comprehensive assessment of security aspects.
